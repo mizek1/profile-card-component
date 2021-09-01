@@ -25,7 +25,7 @@ body {
   display: grid;
   place-items: center;
   background-color: var(--dark-cyan);
-  background-image: url(/images/bg-pattern-top.svg),
+  background-image: url(./images/bg-pattern-top.svg),
     url(/images/bg-pattern-bottom.svg);
   background-repeat: no-repeat no-repeat;
   background-position: right 55vw bottom 35vh, left 50vw top 40vh;
