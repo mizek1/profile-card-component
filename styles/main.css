@@ -1,0 +1,122 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.body-wrapper {
+  display: grid;
+  place-items: center;
+  background-color: var(--dark-cyan);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 55vw bottom 35vh, left 50vw top 40vh;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  border-radius: 15px;
+  width: 330px;
+}
+
+.card__header {
+  background-image: url(/images/bg-pattern-card.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  height: 8em;
+  width: 100%;
+}
+
+.card__picture {
+  border: 7px solid var(--white);
+  border-radius: 50%;
+  margin-top: -3em;
+}
+
+.card__main-info {
+  display: flex;
+  margin-top: 1em;
+}
+
+.card__name {
+  color: var(--dark-desaturated-blue);
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+.card__age {
+  color: var(--dark-grayish-blue);
+}
+
+.card__city {
+  font-size: 14px;
+  color: var(--dark-gray);
+  margin: 0.5em 0 1.5em 0;
+}
+
+.card__footer {
+  border-top: 0.1px solid rgb(238, 237, 237);
+  width: 100%;
+}
+
+.card__stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em;
+}
+
+.card__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__number {
+  color: var(--dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.card__heading-stat {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  color: var(--dark-gray);
+  margin-top: 0.5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 352px;
+  }
+}
